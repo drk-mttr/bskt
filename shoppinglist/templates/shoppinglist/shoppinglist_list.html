@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Shopping Lists{% endblock %}
+
+{% block content %}
+
+<h1>Shopping Lists</h1>
+
+{% for list in lists %}
+    <ul>
+        <li><a href="{{ list.id }}">{{ list.name }}</a></li>
+    </ul>
+{% endfor %}
+
+{% endblock %}
